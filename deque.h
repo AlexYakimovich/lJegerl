@@ -66,7 +66,7 @@ const InfoType deque <InfoType> ::GetFirst() const
 {
     if (Empty())
     {
-        throw runtime_error("Ïóñòîé äåê");
+        throw runtime_error("ÃÃ³Ã±Ã²Ã®Ã© Ã¤Ã¥Ãª");
     }
 
     return first->info;
@@ -76,7 +76,7 @@ const InfoType deque <InfoType> ::GetLast() const
 {
     if (Empty())
     {
-        throw runtime_error("Ïóñòîé äåê");
+        throw runtime_error("ÃÃ³Ã±Ã²Ã®Ã© Ã¤Ã¥Ãª");
     }
 
     return last->info;
@@ -134,7 +134,6 @@ InfoType deque <InfoType> ::GetElement(int number) {
 }
 
 
-////////////////////////////////////2
 template <class InfoType>
 deque <InfoType> ::deque() : first(nullptr), last(nullptr), size(0) {
 
@@ -151,7 +150,6 @@ deque <InfoType> :: ~deque() {
     Erase();
 }
 
-////////////////////////////////////////3
 template <class InfoType>
 void deque <InfoType>::PushLast(InfoType Ainfo) {
     QItem* tmp = new QItem(Ainfo);
@@ -233,13 +231,11 @@ deque<InfoType>& deque <InfoType>::operator = (const deque<InfoType>& D) {
 
 }
 
-////////////////////////////////////4
 template <class InfoType>
 unsigned deque <InfoType>::GetSize() {
     return size;
 }
 
-///////////////////////////////////5
 template<class InfoType>
 ostream& deque<InfoType>::Print(ostream& s) {
     for (int i = 0; i < size; i++)
@@ -259,7 +255,6 @@ ostream& deque <InfoType> ::PrintReverse(ostream& s) {
     return s;
 }
 
-///////////////////////////////6
 template <class InfoType>
 void deque <InfoType>::dsort() {
     vector <InfoType> massive;
